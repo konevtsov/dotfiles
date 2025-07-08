@@ -1,0 +1,15 @@
+{
+  "vimMode": false,
+  "spellcheck": false,
+  "showLineNumber": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "newFileFolderPath": "Files",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "Files",
+  "showInlineTitle": false,
+  "showIndentGuide": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "readableLineLength": true
+}

@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Abecedarium",
+  "interfaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono",
+  "showViewHeader": true,
+  "showRibbon": false,
+  "nativeMenus": false
+}

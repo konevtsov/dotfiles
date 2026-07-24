@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME=""
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -37,6 +37,9 @@ ZSH_THEME=""
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
+
+zstyle ':completion:*:*:docker:*' option-stacking yes
+zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -77,7 +80,7 @@ ZSH_THEME=""
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting history)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting history docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,10 +114,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias n=nvim
 alias python=python3.14
-alias ls="eza --tree --level=1 --icons=always --no-time --no-user --no-permissions"
+# alias ls="eza --tree --level=1 --icons=always --no-time --no-user --no-permissions"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/projects/pg-build/install/bin/"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
@@ -129,3 +133,10 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH=$PATH:$HOME/.local/nvim/bin
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# opencode
+export PATH=/home/techie/.opencode/bin:$PATH
+
+# kimi-code
+export PATH="/home/techie/.kimi-code/bin:$PATH"
